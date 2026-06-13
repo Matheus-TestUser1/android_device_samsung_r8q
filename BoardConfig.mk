@@ -60,6 +60,7 @@ BOARD_MKBOOTIMG_ARGS := \
     --tags_offset 0x01e00000 \
     --dtb_offset 0x01f00000 \
     --header_version 2
+
 BOARD_ROOT_EXTRA_FOLDERS := \
     carrier \
     efs \
@@ -111,7 +112,6 @@ BOARD_USES_METADATA_PARTITION := true
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
-RECOVERY_SDCARD_ON_DATA := true
 
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
@@ -124,6 +124,7 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 486
 TW_DEFAULT_BRIGHTNESS := 128
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone17/temp"
+RECOVERY_SDCARD_ON_DATA := true
 TW_Y_OFFSET := 89
 TW_H_OFFSET := -89
 TW_NO_REBOOT_BOOTLOADER := true
