@@ -68,9 +68,12 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     keyrefuge \
     metadata \
     misc \
+    mnt/vendor/efs \
+    mnt/vendor/persist \
     optics \
     prism \
-    spu
+    spu \
+    dqmdbg
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
